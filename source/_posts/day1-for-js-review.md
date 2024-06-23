@@ -9,7 +9,6 @@ tags: JS
 - ECMAScript
 - BOM 整个浏览器
 - DOM document 文档,从&lt;html>开始到&lt;html>结束
-- 未婚的么
 
 ## js 书写在 html 中的常见规则
 
