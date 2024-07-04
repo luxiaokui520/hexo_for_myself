@@ -26,3 +26,7 @@ ps: 由于本人无法使用鼠标进行 vscode 文件相关操作，因此需�
 ## 快捷键使用
 
 - ctrl + shift + c 可以快速打开终端，并显示为当前路径
+
+## hexo 命令
+
+- 创建新的博客日志 `hexo new [layout] <title>`
