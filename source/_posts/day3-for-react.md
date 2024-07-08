@@ -159,3 +159,46 @@ const VDOM = (
 // 2.渲染虚拟DOM到页面
 ReactDOM.render(VDOM, document.getElementById("test"));
 ```
+
+### *js 语句（代码）*与*js 表达式*的区别
+
+一定注意区分：**js 语句（代码）**与**js 表达式**
+
+- **表达式**：一个表达式会产生一个值，可以放在任何一个需要值的地方
+  下面这些都是表达式：
+
+1. a
+2. a + b
+3. demo(1)
+4. arr.map(() => {})
+5. function test() {}
+
+- **语句（代码）**：控制代码走向
+  下面这些都是语句（代码）：
+
+1. if(){}
+2. for(){}
+3. switch() case:
+
+jsx 中虚拟 DOM 用{}包裹的是**js 表达式**，而不是**js 语句**
+
+```jsx
+// 模拟一些数据
+const data = ["Angular", "React", "Vue"];
+// 1.创建虚拟DOM
+const VDOM = (
+  <div>
+    <h1>前端js框架列表</h1>
+    <ul>
+      {data.map((e, index) => (
+        <li key={index}>{e}</li>
+      ))}
+      {/* 
+        <li>Angular</li>
+        <li>React</li>
+        <li>Vue</li> 
+      */}
+    </ul>
+  </div>
+);
+```
